@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Numbers</title>
+  </head>
+  <body>
+    <h1>Hello <%= name %>!</h1>
+    <p>The numbers 1 - 100 are</p>
+    <p style="background-color: bisque; border-radius: 8px; padding: 1rem;"><%= numbers %></p>
+
+    <% if(name !== 'Asmaa') { %>
+    <div>You are my user</div>
+    <% } %>
+    <br/>
+    <% if(name === 'Asmaa') { %>
+    <div style="font-weight: bold; font-size: larger; color: red;">You are admin !!</div>
+    <% } %>
+  </body>
+</html>
